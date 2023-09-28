@@ -1,0 +1,67 @@
+@import "variables";
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $light-gray;
+    margin-top: 70px;
+}
+
+.qr-code{
+    width: 20%;
+    max-width: 1260px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    font-family: Montserrat;
+    background-color: $white;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 2px 2px 20px -17px $dark-blue;
+
+    img{
+        border-radius: 10px;
+    }
+
+    .info{
+        color: $dark-blue;
+        font-size: 17px;
+        padding: 20px 10px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .qr-code-info{
+        color: $grayish-blue;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 0 10px 20px;
+        text-align: center;
+    }
+}
+
+.attribution{
+    font-family: Montserrat;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px;
+
+    a{
+        color: $dark-blue;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    a:hover{
+        text-decoration: underline wavy;
+    }
+}
+
+@media all and (max-width: 600px){
+    .qr-code{
+        width: 50%;
+        max-width: 375px;
+    }
+}
